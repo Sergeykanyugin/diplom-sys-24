@@ -39,7 +39,7 @@
 ### Сайт 
 Виртуальные машины (vm-web1 и vm-web2) созданы в разных зонах (ru-central1-b и ru-central1-a).
 
-![скрин для Git](https://github.com/Sergeykanyugin/diplom-sys-24/blob/mainimg/2.jpg)
+![скрин для Git](https://github.com/Sergeykanyugin/diplom-sys-24/blob/main/img/2.jpg)
 ---
 
 На виртуальных машинах (веб-серверах) установлен сервер nginx (файл nginx.yaml).  
