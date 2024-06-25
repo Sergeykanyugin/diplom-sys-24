@@ -1,0 +1,13 @@
+#cloud-config
+
+users:
+  - name: vm
+    groups: sudo
+    sudo: 'ALL=(ALL) NOPASSWD:ALL'
+    shell: /bin/bash
+    lock_passwd: false
+    passwd: Lbgkjv
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEb4bX+lWZ5Ad69q6MUAveCtQsf2qd80zp7n0k1Qp0A5 vm2@vm2
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDEi9pFPZmnOS6q4cSGQy/Dt8aph0l+M9FI41+bJXzcNct1/OGts3x6v0hNsj2MltY4TL28QthBKzuaPsenw1R//FvwhEA1Ao5VC8VDZTMxR7ySwsC3yJah6RuIZgIuJ/AA+V4ReI3SIUTzw/4umw+XHvNMgbUE9ESOhKp1xj5+DYW5hd0DwPPTKkjs5ye+tYAAppAW728ET1QV1lsqAunIGSUZr3AlmrxtdZGVewrI06KWCh8KaDAl1TQy62mnKx9F/FWpo+MR32iSH/9MMpoluo7vXv7CpMe/SGaD0R69RIz3XmhQ7iJOxruH+za2GCRpluPpsRCjTqZBGh9hytx3fZ1AvKgwDPrmD673n1/qZveHdEWKHVBebLRrCErNxyUABa5wIS69SukQE7DB8qVMIefXVoAD99YKb3CQ72ekjAuAgUK0DyUxzjWJbzWqUz9x35y4stQDf81/n8bYVseU5noNvDlwAwrQLGu+bsfoazQAQ2vcUUOpkyYzcL1bulE= vm2@vm2 
+
