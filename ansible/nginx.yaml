@@ -1,0 +1,61 @@
+---
+- name: Test Connection to my servres
+  hosts: web
+  become:
+    yes
+
+  tasks:
+    - name: update apt packages
+      apt:
+        force_apt_get: true
+        upgrade: dist
+        update_cache: yes
+      become: true
+
+    - name: Remove apt lock file
+      file:
+        state: absent
+        path: "/var/lib/dpkg/lock"
+
+    - name: Install nginx on all servers
+      apt:
+        name: nginx
+        state: latest
+        update_cache: yes
+
+- name: copy index.html web1
+  hosts: web1
+  become: yes
+
+  tasks:
+    - name: copy index_new.html
+      ansible.builtin.copy:
+        src: /home/vm/nginx/www/index-web1.html
+        dest: /var/www/html/index.html
+        owner: root
+        group: sudo
+        mode: "0644"
+
+- name: copy index.html web2
+  hosts: web2
+  become: yes
+
+  tasks:
+    - name: copy index_new.html
+      ansible.builtin.copy:
+        src: /home/vm/nginx/www/index-web2.html
+        dest: /var/www/html/index.html
+        owner: root
+        group: sudo
+        mode: "0644"
+
+- name: Enable Nginx
+  hosts: web
+  become: yes
+
+  tasks:
+    - name:
+      ansible.builtin.service:
+        name: nginx
+        enabled: true
+        state: restarted
