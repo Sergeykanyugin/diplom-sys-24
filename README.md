@@ -153,4 +153,4 @@ Cоздана ВМ (vm-elk), на которой развернут Elasticsearc
 ## Дипломная работа и программный код Terraform и Ansible находятся в отдельном репазитории
 
 
-https://github.com/Sergeykanyugin/sys-diplom 
+https://github.com/Sergeykanyugin/diplom-sys-24
