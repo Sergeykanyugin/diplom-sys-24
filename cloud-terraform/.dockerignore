@@ -1,0 +1,4 @@
+# Compiled files
+**/.terraform/*
+*.tfstate
+*.tfstate.*
