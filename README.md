@@ -159,7 +159,7 @@ https://github.com/Sergeykanyugin/diplom-sys-24
 
 ## Доработанное решение дипломного проекта 
 
-1. У виртуальных машин (vm-web1, vm-web2, vm-elk) отвязаны пуббличные адреса 
+1. У виртуальных машин (vm-web1, vm-web2, vm-elk) отвязаны публичные адреса 
 
 ![скрин для Git](https://github.com/Sergeykanyugin/diplom-sys-24/blob/main/img/31.jpg)
 --- 
