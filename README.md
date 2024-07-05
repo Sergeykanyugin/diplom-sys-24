@@ -40,6 +40,7 @@
 Виртуальные машины (vm-web1 и vm-web2) созданы в разных зонах (ru-central1-b и ru-central1-a).
 
 ![скрин для Git](https://github.com/Sergeykanyugin/diplom-sys-24/blob/main/img/2.jpg)
+
 ---
 
 На виртуальных машинах (веб-серверах) установлен сервер nginx (файл nginx.yaml).  
@@ -154,3 +155,26 @@ Cоздана ВМ (vm-elk), на которой развернут Elasticsearc
 
 
 https://github.com/Sergeykanyugin/diplom-sys-24
+
+
+## Доработанное решение дипломного проекта 
+
+1. У виртуальных машин (vm-web1, vm-web2, vm-elk) отвязаны пуббличные адреса 
+
+![скрин для Git](https://github.com/Sergeykanyugin/diplom-sys-24/blob/main/img/31.jpg)
+--- 
+
+2. Удален и перевыпущен ключ key-sys.json 
+
+![скрин для Git](https://github.com/Sergeykanyugin/diplom-sys-24/blob/main/img/30.jpg)
+--- 
+
+3. Добавлен .dockerignore для cloud-terraform/terraform.tfstate и cloud-terraform/terraform.tfstate.backup
+
+![скрин для Git](https://github.com/Sergeykanyugin/diplom-sys-24/blob/main/img/32.jpg)
+--- 
+
+4. В файле inventory.ini ip-адреса изменены на FQDN 
+
+![скрин для Git](https://github.com/Sergeykanyugin/diplom-sys-24/blob/main/img/33.jpg)
+--- 
